@@ -41,7 +41,8 @@ open class LogIn : AppCompatActivity() {
             loginViewModel.getLoginDetails(context, email, password)!!.observe(this, Observer {
                 if (it == null) {
                     Toast.makeText(this, "Not found", Toast.LENGTH_LONG).show()
-                } else {
+                }
+                else {
                     Toast.makeText(this, "Login complete", Toast.LENGTH_LONG).show()
                     val bundle = Bundle()
                     bundle.putString("email", it.Email)
@@ -51,10 +52,7 @@ open class LogIn : AppCompatActivity() {
                     intent.putExtras(bundle)
                     //     intent.putExtra( "Email", email)
                     startActivity(intent)
-
-
                 }
-
             })
 
         }
