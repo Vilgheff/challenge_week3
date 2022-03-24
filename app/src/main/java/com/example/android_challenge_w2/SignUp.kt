@@ -25,7 +25,6 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
         supportActionBar?.hide();
-
         bindingSignUp = DataBindingUtil.setContentView(this, R.layout.activity_sign_up)
 
 
